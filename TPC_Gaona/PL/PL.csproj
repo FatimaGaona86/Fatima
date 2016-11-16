@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15F0C824-1433-4C3F-843E-2D9592F342D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PL</RootNamespace>
+    <AssemblyName>PL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAbmDisponibilidad_Medico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmDisponibilidad_Medico.Designer.cs">
+      <DependentUpon>frmAbmDisponibilidad_Medico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbmEspecialidad_Medico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmEspecialidad_Medico.Designer.cs">
+      <DependentUpon>frmAbmEspecialidad_Medico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbmLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmLocalidad.Designer.cs">
+      <DependentUpon>frmAbmLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbmMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmMedico.Designer.cs">
+      <DependentUpon>frmAbmMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbmPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmPaciente.Designer.cs">
+      <DependentUpon>frmAbmPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbmEspecialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmEspecialidad.Designer.cs">
+      <DependentUpon>frmAbmEspecialidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoGral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoGral.Designer.cs">
+      <DependentUpon>frmListadoGral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTurnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTurnos.Designer.cs">
+      <DependentUpon>frmTurnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAbmDisponibilidad_Medico.resx">
+      <DependentUpon>frmAbmDisponibilidad_Medico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbmEspecialidad_Medico.resx">
+      <DependentUpon>frmAbmEspecialidad_Medico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbmLocalidad.resx">
+      <DependentUpon>frmAbmLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbmMedico.resx">
+      <DependentUpon>frmAbmMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbmPaciente.resx">
+      <DependentUpon>frmAbmPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbmEspecialidad.resx">
+      <DependentUpon>frmAbmEspecialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoGral.resx">
+      <DependentUpon>frmListadoGral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTurnos.resx">
+      <DependentUpon>frmTurnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{68a92bea-09f9-46ae-bdfe-91a2deb81aaa}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{ff2d6897-12ac-4a3d-89c5-95e50f32acbb}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clinica_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clinica_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clinica_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clinica_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clinica_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clinica_8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clinica_9.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
